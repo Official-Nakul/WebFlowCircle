@@ -6,11 +6,13 @@
   width: 100%;
   position: relative;
   display: grid;
-  background-color: var(--clr-secondary);
   grid-template-columns: 6.5em [breakout-start] 1fr [content-start] 1fr [content-end] 1fr [breakout-end] 6.5em;
   grid-template-rows: 1.5em auto 4em 35em 4em 4.5em 1fr;
   place-items: center;
   justify-content: center;
+}
+body {
+  background-color: var(--clr-secondary);
 }
 ::-webkit-scrollbar {
   width: 8px;
