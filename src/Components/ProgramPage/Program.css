@@ -1,0 +1,74 @@
+.program-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1/-1;
+  background-color: var(--clr-secondary);
+}
+.program-left {
+  margin-top: 3em;
+}
+.program-right {
+  margin: 2em auto 2em 0em;
+  justify-content: space-between;
+}
+.program-hero-hand {
+  top: 19.1em;
+  left: 12.9em;
+}
+.program-hero-lip {
+  top: 16.8em;
+  left: 17.3em;
+}
+.cheader {
+  color: var(--neutral-300);
+  font-family: "Poppins", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 400;
+}
+.cnum1 {
+  background: url("/cnumbg.svg");
+}
+.cnum2 {
+  background: url("/cnumbg2.svg");
+}
+.cnum3 {
+  background: url("/cnumbg3.svg");
+  transform: scale(1.25);
+}
+.cnum {
+  height: 5em;
+  width: 5em;
+  background-size: 3.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cdetails > *:not(p) {
+  font-family: "Poppins", sans-serif;
+}
+.cdetails > span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--neutral-300);
+}
+.cdetails > p {
+  width: 16em;
+  color: var(--neutral-200);
+  font-size: 1.25rem;
+  font-weight: 350;
+  text-align: left;
+}
+.carrow {
+  transform: translateX(1em);
+  transform: translateY(1em);
+}
+.inverted-arrow {
+  transform: scaleX(-1);
+}
+.cnum-text {
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-secondary);
+  font-size: 1.2em;
+  font-weight: 600;
+}

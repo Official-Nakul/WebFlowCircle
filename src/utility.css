@@ -1,0 +1,74 @@
+:root {
+  --neutral-200: rgba(27, 27, 27, 0.7);
+  --neutral-300: #333333;
+  --neutral-100: hsl(0, 100%, 100%);
+  --neutral-0: hsl(0, 0%, 0%);
+  --clr-primary: #ebc7b5;
+  --clr-secondary: #f8efe5;
+}
+.btn-text {
+  z-index: 1;
+  color: var(--neutral-0);
+  font-size: 1.25rem;
+  font-weight: 375;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.sign-in-btn {
+  cursor: pointer;
+  position: relative;
+  height: 3.25em;
+  width: 11em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--neutral-0);
+  background-color: var(--neutral-100);
+  border-radius: 50px;
+  overflow: hidden;
+}
+.sign-in-btn::after {
+  transform: scale(0);
+  height: 10em;
+  width: 11em;
+  content: "";
+  position: absolute;
+  background-color: var(--clr-primary);
+  border-radius: 0px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+}
+.sign-in-btn:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+.hero-btn {
+  cursor: pointer;
+  position: relative;
+  height: 4.25em;
+  width: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--neutral-0);
+  background-color: var(--clr-primary);
+  border-radius: 50px;
+  overflow: hidden;
+}
+.hero-btn::after {
+  transform: scale(0);
+  height: 15em;
+  width: 15em;
+  content: "";
+  position: absolute;
+  background-color: var(--neutral-100);
+  border-radius: 0px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+.hero-btn:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
